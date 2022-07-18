@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn">
+
+<head>
+  <meta charset="UTF-8">
+    	  <!-- I hate doing SEO --> 
+	<link rel="canonical" href="https://readyresearcherone.github.io/readyresearcherone/rpg/index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="" >
+  <meta name="description" content="">
+  <!--FACEBOOK-->
+    <meta property="og:title" content="Ready Researcher One"/>
+    <meta property="og:image" content="seo.PNG"/>
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="720" />	
+    <meta property="og:url" content="https://readyresearcherone.github.io/readyresearcherone/rpg/" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Monsters and Magic"/>
+    <meta property="og:description" content="I am a big fan of DnD style games, some time ago I decided to try and make one such game from scratch.
+    The plan was to create a 2d turn-based RPG game using html/css and js."/>
+    
+  <meta name="twitter:card" content="Ready Researcher One" />
+  <meta name="twitter:site" content="https://readyresearcherone.github.io/readyresearcherone/rpg/index.html" />
+  <meta name="twitter:title" content="Monsters and Magic" />
+  <meta name="twitter:description" content="I am a big fan of DnD style games, some time ago I decided to try and make one such game from scratch.
+  The plan was to create a 2d turn-based RPG game using html/css and js." />
+  <meta name="twitter:image" content="seo.png" />
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- I hate doing SEO -->
+  <title>Monsters and Magic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+  <link rel="stylesheet" href="intro/style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+
+
+  <div id='hero'>
+    <div id="land" class="overlay">
+      <a href="javascript:void(0)" id="close_help" onclick="closeHelp()">⬺</a>
+      <div class="overlay-content">
+
+      </div>
+    </div>
+    <a id="scroll_down" href="#hero_section">⇟</a>
+    <!-- <a id="scroll_down" style="left:52%;" href="game.html">⤕</a>
+    <a id="scroll_down" style="left:42%; cursor: pointer;" href="#hero" onclick="openHelp();">⬺</a> -->
+    <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
+    <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
+    <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
+    <div class='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
+    <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
+    <div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
+  </div>
+  <div id='hero-mobile'>
+
+  </div>
+  <div id='content'>
+    <div class='container'>
+      <section id='hero_section' class='first-section'>
+        <h1>Monsters and Magic</h1>
+        <p>I am a big fan of DnD style games, some time ago I decided to try and make one such game from scratch.
+          The plan was to create a 2d turn-based RPG game using html/css and js.
+        </p>
+
+        <a id="scroll_top" href="#hero">⇞</a>
+        <h2 id="utitle">Version 0.0.2</h2>
+
+        <div id="update">
+          <p>With this update I have finalized some of the previous features, re-made the UI and implemented limited
+            online capabilities.
+          </p>
+
+          <div class='row'>
+            <div class='col-sm-6'>
+
+              <h3 id="">Features</h3>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-sm-6'>
+              </ul>
+              <ul>
+                <li><a href="#save">Load player data</a></li>
+                <li><a href="#anim">Animated scenes</a></li>
+                <li><a href="#reso">User controls</a></li>
+                <li><a href="#cdice">Custom dice</a></li>
+                <li><a href="#cmap">Added Map - wip</a></li>
+                <li><a href="#cdt">Other</a></li>
+              </ul>
+            </div>
+
+            <div class='col-sm-6'>
+
+              <p><img src="intro/intro/002/1.PNG" alt="Honestly, I am not a software dev" width="100%" height="auto">
+              </p>
+
+
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class='col-sm-6'>
+              <h3 id="save" >Save/Load</h3>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-sm-6'>
+              <p>Currently I am using a service from Moralis through which I can handle the signup/login process.
+                Furthermore, I am using a
+                <a href="https://docs.moralis.io/moralis-server/database">Moralis</a> database to store all the data.
+              </p>
+              <p>The database contains information about the character: image, name, gold, stats etc. + some meta data:
+                zoom value, sound volume.</p>
+            </div>
+            <div class='col-sm-6'>
+              <video width="100%" height="auto" controls>
+                <source src="intro/intro/mp4/load.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+
+          <div class='row'>
+            <div class='col-sm-6'>
+              <h3 id="anim">Animated Scenes</h3>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-sm-6'>
+              <p>Since the Ui was really dull, I thought it would be a good idea to some animated backgrounds together
+                with background music. Currently, there are 4 animated backgrounds which cycle on
+                pseudo-random basis.
+              </p>
+              <p>They consist of layered images which are then animated using css to create a parallax animation. </p>
+            </div>
+            <div class='col-sm-6'>
+              <video width="100%" height="auto" controls>
+                <source src="intro/intro/mp4/scenes.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+
+          <div class='row'>
+            <div class='col-sm-6'>
+              <h3 id="reso">User Controls</h3>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-sm-6'>
+
+              <p>Users can increase or decrease the size of the UI by pressing the plus/minus buttons on the top right
+                side.</p>
+              <p>Volume control is just a simple slider currently. I do have plans to implement more volume control
+                settings.</p>
+            </div>
+            <div class='col-sm-6'>
+              <video width="100%" height="auto" controls>
+                <source src="intro/intro/mp4/zoom.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+
+
+          <div class='row'>
+            <div class='col-sm-6'>
+              <h3 id="cdice">Custom dice</h3>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-sm-6'>
+              <p>The 3d dice will change their colour scheme according to the character that was chosen.</p>
+              <p>While there are only 5 colour schemes currently, I am planning on including more dice customization.
+              </p>
+            </div>
+            <div class='col-sm-6'>
+              <video width="100%" height="auto" controls>
+                <source src="intro/intro/mp4/custom.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+
+
+          <div class='row'>
+            <div class='col-sm-6'>
+              <h3 id="cmap">Map - Wip</h3>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-sm-6'>
+              <p>Added an interactive map which will, in time, replace the ribbon menu. Players will be able
+                to access various shops such as armor/weapon/potion shops and skill trainers.</p>
+              <p>The map is still a very early work in progress.</p>
+            </div>
+            <div class='col-sm-6'>
+              <video width="100%" height="auto" controls>
+                <source src="intro/intro/mp4/map.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <p></p>
+          <h3 id="cdt">Other</h3>
+          <p>Added a rudimentary dice attack modifier mechanic. Currently it can only be used with the special attack
+            and only influence the damage value. - Wip</p>
+
+        </div>
+
+
+        <h2 s id="utitle">Version 0.0.1</h2>
+
+        <div id="update">
+
+        <!--  
+        <div class='row'>
+       <div class='col-sm-6'>
+       <h3 id="cmech">Title</h3>
+        </div>
+        </div>
+        <div class='row'>
+        <div class='col-sm-6'>    
+        <p>content here</p>
+        </div>
+        <div class='col-sm-6'>           
+        <video width="100%" height="auto" controls>
+        <source src="intro/intro/mp4/selection.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video> 
+        </div>
+        </div>-->
+
+
+
+
+        <p>First working iteration - with most of the basic mechanics implemented.
+        </p>
+
+
+
+
+        <div class='row'>
+          <div class='col-sm-6'>
+            <h3>Features</h3>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-sm-6'>
+
+            <ul>
+              <li><a href="#cmech"> Character mechanics </a></li>
+              <li><a href="#shop"> Item Shop</a></li>
+              <li><a href="#inv"> Inventory</a></li>
+              <li><a href="#skill"> Skill tree </a></li>
+              <li><a href="#enemy">Battle mechanics </a></li>
+            </ul>
+
+
+          </div>
+
+          <div class='col-sm-6'>
+
+            <p><img src="intro/intro/img/home.PNG" alt="Honestly, I am not a software dev" width="100%" height="auto">
+            </p>
+
+
+
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='col-sm-6'>
+
+            <h3 id="cmech">Character mechanics</h3>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-sm-6'>
+            <ul>
+              <li><u> Character Picker</u></li>
+              Four classes available - each with different starting stat points.
+              There an is automated name generator which fires everytime the dice are rolled.
+              <li><u>Stat point multipliers</u></li>
+              Increase the stats points a class has based on dice rolls.
+              <li> <u>Character stats</u></li>
+              Each class has one or two main stats.
+              <li><u> Dice rolling mechanics</u></li>
+              Each class has a combination of 3 dice. For example: Wizard has 1d4, 1d6 and 1d20.
+              <li><u>Spider-chart for each class </u></li>
+              The spider-char offers a visual representation of the role of each class.
+            </ul>
+
+          </div>
+
+          <div class='col-sm-6'>
+
+            <video width="100%" height="auto" controls>
+              <source src="intro/intro/mp4/selection.mp4" type="video/mp4">
+
+              Your browser does not support the video tag.
+            </video>
+
+
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='col-sm-6'>
+
+            <h3 id="shop">Item Shop</h3>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-sm-6'>
+            <ul>
+              <li> The shop has two currencies: Gold coins and Skill Points</li>
+              <li> The shop sells three types of of items: </li>
+              gear - increases attack rate/damage/armor <br>
+              skills - which improve existing character stats<br>
+              spell book - allows character to use one spell type
+              <li> Items cost gold coins, while skills cost gold + skill points</li>
+              <li> Buying and sellling mechanics works. </li>
+            </ul>
+          </div>
+
+          <!-- template-->
+          <div class='col-sm-6'>
+            <video width="100%" height="auto" controls>
+              <source src="intro/intro/mp4/shop.mp4" type="video/mp4">
+
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='col-sm-6'>
+
+            <h3 id="inv">Inventory</h3>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-sm-6'>
+            <ul>
+              <li> Iventory allows players to equip items.</li>
+              <li> Each items has its own slot in the inventory window.</li>
+              <li> Only one piece of item/gear type can be equipped</li>
+            </ul>
+
+          </div>
+
+          <!-- template-->
+          <div class='col-sm-6'>
+            <video width="100%" height="auto" controls>
+              <source src="intro/intro/mp4/inventory.mp4" type="video/mp4">
+
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+
+        <div class='row'>
+          <div class='col-sm-6'>
+
+            <h3 id="skill">Skill Tree</h3>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-sm-6'>
+            <ul>
+              <li> Skill tree allows characters to equip their skills.</li>
+              <li> Each skill has its own slot in the skill tree window.</li>
+              <li> The skills are divided into three paths. Each path has a set number of skills.</li>
+            </ul>
+
+          </div>
+
+          <!-- template-->
+          <div class='col-sm-6'>
+            <video width="100%" height="auto" controls>
+              <source src="intro/intro/mp4/skilltree.mp4" type="video/mp4">
+
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+
+        <div class='row'>
+          <div class='col-sm-6'>
+
+            <h3 id="enemy">Battle</h3>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-sm-6'>
+            <ul>
+              <li> Three types of attack: light, heavy and spell [if spellbook equipped].</li>
+              <li> If potion is equipped, character can heal each turn for 10 hp.</li>
+              <li> Currently the character can always run.</li>
+              <li> If character dies - nothing happens at the moment.</li>
+              <li> If enemy dies - character gains some gold and skill points.</li>
+            </ul>
+          </div>
+
+          <!-- template-->
+          <div class='col-sm-6'>
+            <video width="100%" height="auto" controls>
+              <source src="intro/intro/mp4/battle.mp4" type="video/mp4">
+
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        </div>
+
+      </section>
+      <p style="text-align: center; font-size: 10px;">© copyright 2021, Monsters and Magic </p>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="intro/script.js"></script>
+</body>
+
+</html>
